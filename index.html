@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <!-- STEP 1 -->
+    <form class="form form1">
+        <h2>Create Account</h2>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <div class="btns">
+            <button type="button" onclick="next(1)">Next</button>
+        </div>
+    </form>
+
+    <!-- STEP 2 -->
+    <form class="form form2">
+        <h2>Address Details</h2>
+        <input type="text" placeholder="Address" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="State" required>
+        <div class="btns">
+            <button type="button" onclick="prev(2)">Prev</button>
+            <button type="button" onclick="next(2)">Next</button>
+        </div>
+    </form>
+
+    <!-- STEP 3 -->
+    <form class="form form3">
+        <h2>Personal Info</h2>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="tel" placeholder="Mobile No." required>
+        <div class="btns">
+            <button type="button" onclick="prev(3)">Prev</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
